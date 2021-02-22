@@ -1,0 +1,31 @@
+// $accent: #1403af;
+// $bodyColour: #560858;
+// $highlightColour: #f7a234;
+
+@mixin bodyText ($fontSize) {
+  font-family: 'Quicksand', Helvetica, Trebuchet;
+  font-size: $fontSize;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  @include bodyText(14vw);
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  filter: drop-shadow(-7px 0px 1px #dd4f24);
+  animation: title 1.2s ease-in,
+    fade-in 1.5s ease-in,
+    shadow 1.8s;
+    animation-timing-function: ease-in-out;
+  transition: all 1s;
+}
+
+p {
+  @include bodyText(25px);
+}
+

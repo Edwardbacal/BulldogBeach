@@ -1,0 +1,73 @@
+body {
+  background: #0E010D;
+  max-height: 100vh;
+  background-size: cover;
+}
+
+video {
+  margin: 0 auto;
+  max-height: 80vh;
+  position: fixed;
+  top: 10%;
+  left: calc(50% - 40vh);
+  transition: 1.5s all ease-in;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.dog {
+  background: url(./assets/dog.png);
+  height: 100vh;
+  background-size: cover;
+  animation: hue 4s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.suds {
+  position: absolute;
+  left: 1vw;
+  top: 400px;
+  height: 120px;
+  width: 80px;
+  opacity: .5;
+  background: red;
+  border-radius: 50%;
+}
+
+button {
+  background: #0e010d;
+  position: absolute;
+  bottom: 50px;
+  margin: 0 auto;
+  left: calc(50% - 118px);
+  padding: 20px 100px;
+  border-radius: 50px;
+  filter: drop-shadow(0px 5px 2px #5e5a5a);
+  color: white;
+  font-family: 'quicksand', helvetica;
+  animation: fade-in 3s;
+  // animation-delay: 1s;
+  transition: all 1s;
+    &:hover {
+      background: grey;
+      color: black;
+    }
+}
+
+
